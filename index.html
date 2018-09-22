@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>TickMark Demo</title>
+		<meta name="description" content="TickMark Demo: An Excel Add-in for auditors and accountants" />
+		<meta name="keywords" content="TickMark, tickmark, excel, addin" />
+		<meta name="author" content="Mike Y. Liao" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<span>MLTools <span class="bp-icon bp-icon-about" data-content="The TickMark Excel Add-In is designed for auditors and accountants. Especially thanks to the advice from Anthony, CPA, beloved colleagues and kind strangers from the Internet, without your help, this would not have been possible."></span></span>
+				<h1>TickMark Demo</h1>
+			</header>
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="img/thumb/0.png" alt="img01"/>
+								<figcaption><h3><i class="fas fa-download"></i> 安裝步驟</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/01.png" alt="img01"/>
+								<figcaption><h3><i class="fas fa-trash-alt"></i> 移除步驟</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/1.png" alt="img01"/>
+								<figcaption><h3>1. 插入PBC文字方塊</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/2.png" alt="img02"/>
+								<figcaption><h3>2. 更改字型</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/3.png" alt="img03"/>
+								<figcaption><h3>3. 基本字符</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/4.png" alt="img04"/>
+								<figcaption><h3>4. 基本字符-圖形</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/5.png" alt="img05"/>
+								<figcaption><h3>5. 基本字符-羅馬數字</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/6.png" alt="img06"/>
+								<figcaption><h3>6. 箭頭與框線</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/7.png" alt="img07"/>
+								<figcaption><h3>7. 填滿色彩</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/8.png" alt="img08"/>
+								<figcaption><h3>8. 勾稽數字</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/9.png" alt="img09"/>
+								<figcaption><h3>9. Note字元</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/10.png" alt="img10"/>
+								<figcaption><h3>10. 插入欄位、括弧</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/11.png" alt="img11"/>
+								<figcaption><h3>11. 勾稽連結</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/12.png" alt="img12"/>
+								<figcaption><h3>12. 簽名、畫筆</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/13.png" alt="img13"/>
+								<figcaption><h3>13. 日曆</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/14.png" alt="img14"/>
+								<figcaption><h3>14. 核取方塊</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/15.png" alt="img15"/>
+								<figcaption><h3>15. 雙底線、千分位</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/16.png" alt="img16"/>
+								<figcaption><h3>16. 清除</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/17.png" alt="img17"/>
+								<figcaption><h3>17. 每日一句</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/18.png" alt="img18"/>
+								<figcaption><h3>18. 微軟正黑體</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/19.png" alt="img19"/>
+								<figcaption><h3>19. 選擇性貼上</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/20.png" alt="img20"/>
+								<figcaption><h3>20. 原地貼成值</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/21.png" alt="img21"/>
+								<figcaption><h3>21. 插入右欄、下列</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/22.png" alt="img22"/>
+								<figcaption><h3>22. 轉底稿</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/23.png" alt="img23"/>
+								<figcaption><h3>23. 切換編輯模式</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/24.png" alt="img24"/>
+								<figcaption><h3>24. 相反數</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/25.png" alt="img25"/>
+								<figcaption><h3>25. 分割活頁簿</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/26.png" alt="img26"/>
+								<figcaption><h3>26. 搜尋財報、年報</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/27.png" alt="img27"/>
+								<figcaption><h3>27. 證交所公司資訊</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/28.png" alt="img28"/>
+								<figcaption><h3>28. 上市公司收盤資訊</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/29.png" alt="img29"/>
+								<figcaption><h3>29. 上櫃公司收盤資訊</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/30.png" alt="img30"/>
+								<figcaption><h3>30. 上市公司K線圖</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/31.png" alt="img31"/>
+								<figcaption><h3>31. 上櫃公司K線圖</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/32.png" alt="img32"/>
+								<figcaption><h3>32. 上市各月收盤資訊</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/33.png" alt="img33"/>
+								<figcaption><h3>33. 即時股價</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/34.png" alt="img34"/>
+								<figcaption><h3>34. 篩選工具</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/35.png" alt="img35"/>
+								<figcaption><h3>35. 插入文字方塊</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/36.png" alt="img36"/>
+								<figcaption><h3>36. 標記加總</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/37.png" alt="img37"/>
+								<figcaption><h3>37. 複製選取加總值</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/38.png" alt="img38"/>
+								<figcaption><h3>38. 填滿空格</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/39.png" alt="img39"/>
+								<figcaption><h3>39. 匯率查詢對話方塊</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/40.png" alt="img40"/>
+								<figcaption><h3>40. 匯率表產生器</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/41.png" alt="img41"/>
+								<figcaption><h3>41. 近兩年匯率走勢圖</h3></figcaption>
+							</figure>
+						</li>																												
+						<li>
+							<figure>
+								<img src="img/thumb/42.png" alt="img42"/>
+								<figcaption><h3>42. 即時匯率</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/43.png" alt="img43"/>
+								<figcaption><h3>43. 單一幣別匯率查詢</h3></figcaption>
+							</figure>
+						</li>																												
+						<li>
+							<figure>
+								<img src="img/thumb/44.png" alt="img44"/>
+								<figcaption><h3>44. 全部幣別匯率查詢</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/45.png" alt="img45"/>
+								<figcaption><h3>45. 匯率換算</h3></figcaption>
+							</figure>
+						</li>																												
+						<li>
+							<figure>
+								<img src="img/thumb/46.png" alt="img46"/>
+								<figcaption><h3>46. 刪除空白列</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/47.png" alt="img47"/>
+								<figcaption><h3>47. 刪除空白欄</h3></figcaption>
+							</figure>
+						</li>																												
+						<li>
+							<figure>
+								<img src="img/thumb/48.png" alt="img48"/>
+								<figcaption><h3>48. 刪除圖示</h3></figcaption>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<img src="img/thumb/49.png" alt="img49"/>
+								<figcaption><h3><i class="fas fa-rocket"></i> 自訂快捷鍵安裝步驟</h3></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/thumb/50.png" alt="img50"/>
+								<figcaption><h3><i class="fas fa-feather-alt"></i> 新增快捷鍵-1</h3></figcaption>
+							</figure>
+						</li>
+												<li>
+							<figure>
+								<img src="img/thumb/50.png" alt="img50"/>
+								<figcaption><h3><i class="fas fa-feather-alt"></i> 新增快捷鍵-2</h3></figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3><i class="fas fa-download"></i> 安裝步驟</h3>
+								</figcaption>
+								<img src="img/large/0.png" alt="img0"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3><i class="fas fa-trash-alt"></i> 移除步驟</h3>
+								</figcaption>
+								<img src="img/large/01.png" alt="img01"/>
+							</figure>
+						</li>
+
+
+
+						<li>
+							<figure>
+								<figcaption>
+									<h3>1. 插入PBC文字方塊</h3>
+								</figcaption>
+								<img src="img/large/1.gif" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>2. 更改字型</h3>
+									<p><i class="fas fa-angle-right"></i> 標楷體、微軟正黑體、新細明體<br><i class="fas fa-angle-right"></i> Arial、Book Antiqua、Calibri</p>
+								</figcaption>
+								<img src="img/large/2.gif" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>3. 基本字符</h3>
+									</figcaption>
+								<img src="img/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>4. 基本字符-圖形</h3>
+									<p><i class="fas fa-angle-right"></i> 圖形(①~⑩、☆~♦、↓~↖)放在儲存格中<br><i class="fas fa-angle-right"></i> 希臘字母(α~ω)放在文字方塊中</p>
+								</figcaption>
+								<img src="img/large/4.gif" alt="img04"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>5. 基本字符-羅馬數字</h3>
+									<p><i class="fas fa-angle-right"></i> 羅馬數字放在文字方塊中，自動靠左</p>
+								</figcaption>
+								<img src="img/large/5.png" alt="img05"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>6. 箭頭與框線</h3>
+								</figcaption>
+								<img src="img/large/6.gif" alt="img06"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>7. 填滿色彩</h3>
+								</figcaption>
+								<img src="img/large/7.png" alt="img07"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>8. 勾稽數字</h3>
+									<p><i class="fas fa-angle-right"></i> 先選定來源儲存格，再按此按鈕設定目標儲存格，確定後會自動產生如下圖之符號</p>
+								</figcaption>
+								<img src="img/large/8.gif" alt="img08"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>9. Note字元</h3>
+								</figcaption>
+								<img src="img/large/9.png" alt="img09"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>10. 插入欄位、括弧</h3>
+								</figcaption>
+								<img src="img/large/10.gif" alt="img10"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>11. 勾稽連結</h3>
+									<p><i class="fas fa-angle-right"></i> 在同一活頁簿不同工作表中快速建立勾稽連結<br><i class="fas fa-angle-right"></i> 先選定來源儲存格，再按此按鈕設定目標勾稽儲存格</p>
+								</figcaption>
+								<img src="img/large/11.gif" alt="img11"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>12. 簽名、畫筆</h3>
+									<p><i class="fas fa-angle-right"></i> 名字設定：檔案 → 選項 → 一般 → 個人化您的Microsoft Office</p>
+								</figcaption>
+								<img src="img/large/12.png" alt="img12"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>13. 日曆</h3>
+									<p><i class="fas fa-angle-right"></i> 在儲存格插入指定日期</p>
+								</figcaption>
+								<img src="img/large/13.gif" alt="img13"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>14. 核取方塊</h3>
+									<p><i class="fas fa-angle-right"></i> 打勾圖示在選取範圍新增核取方塊<br><i class="fas fa-angle-right"></i> 叉叉圖示刪除選取範圍的核取方塊</p>
+								</figcaption>
+								<img src="img/large/14.gif" alt="img14"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>15. 雙底線、千分位</h3>
+									<p><i class="fas fa-angle-right"></i> 千分位格式為無小數點，負數紅色括號表示</p>
+								</figcaption>
+								<img src="img/large/15.gif" alt="img15"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>16. 清除</h3>
+									<p><i class="fas fa-angle-right"></i> Remove HyperLink清除該張工作表所有用Cell Link產出的勾稽連結<br>
+									   <i class="fas fa-angle-right"></i> Remove Marker清除所有畫筆<br>
+									   <i class="fas fa-angle-right"></i> Remove All清除所有Shape物件(使用此功能請小心會將大部分符號都刪除)
+									</p>
+								</figcaption>
+								<img src="img/large/16.gif" alt="img16"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>17. 每日一句</h3>
+									<p><i class="fas fa-angle-right"></i> 約1000句英文句子隨機產生</p>
+								</figcaption>
+								<img src="img/large/17.gif" alt="img17"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>18. 微軟正黑體</h3>
+									<p><i class="fas fa-angle-right"></i> 正黑體：將整張工作表設定字型：微軟正黑體、大小10<br>
+									<i class="fas fa-angle-right"></i> 正黑體(範圍)：將選定的範圍更改成微軟正黑體、大小10</p>
+								</figcaption>
+								<img src="img/large/18.gif" alt="img18"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>19. 選擇性貼上</h3>
+									<p><i class="fas fa-angle-right"></i> 先複製一範圍再使用此功能，貼上值、格式及欄寬</p>
+								</figcaption>
+								<img src="img/large/19.gif" alt="img19"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>20. 原地貼成值</h3>
+									<p><i class="fas fa-angle-right"></i> 將一選取範圍在原地貼成值</p>
+								</figcaption>
+								<img src="img/large/20.gif" alt="img20"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>21. 插入右欄、下列</h3>
+								</figcaption>
+								<img src="img/large/21.gif" alt="img21"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>22. 轉底稿</h3>
+									<p><i class="fas fa-angle-right"></i> 將所有工作表轉成值與刪除所有註解</p>
+								</figcaption>
+								<img src="img/large/22.gif" alt="img22"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>23. 切換編輯模式</h3>
+									<p><i class="fas fa-angle-right"></i> 切換雙擊儲存格的編輯模式(直接在格子裡編輯或連結到該參照)</p>
+								</figcaption>
+								<img src="img/large/23.gif" alt="img23"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>24. 相反數</h3>
+									<p><i class="fas fa-angle-right"></i> 取儲存格的相反數，公式也可使用，不會貼成值</p>
+								</figcaption>
+								<img src="img/large/24.gif" alt="img24"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>25. 分割活頁簿</h3>
+									<p><i class="fas fa-angle-right"></i> 將目前活頁簿所有工作表分割成單一Excel檔案，儲存位置為此活頁簿所在的資料夾</p>
+								</figcaption>
+								<img src="img/large/25.gif" alt="img25"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>26. 搜尋財報、年報</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入公司股票代碼、年度，確認後開啟公開資訊觀測站的財報及年報頁面<br>
+										<i class="fas fa-angle-right"></i> 預設開啟瀏覽器為Google Chrome，若無請先安裝</p>
+								</figcaption>
+								<img src="img/large/26.gif" alt="img26"/>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<figcaption>
+									<h3>27. 證交所公司資訊</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入公司股票代碼，開啟該公司證交所上市公司整合資訊頁面<br>
+									<i class="fas fa-angle-right"></i> 預設開啟瀏覽器為Google Chrome，若無請先安裝</p>
+								</figcaption>
+								<img src="img/large/27.gif" alt="img27"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>28. 上市公司收盤資訊(資料來源：證交所)</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入上市公司股票代碼，查詢選定日期之收盤資訊<br>
+										<i class="fas fa-angle-right"></i> 事務所內部網路限制此功能，連接所外網路即可使用</p>
+								</figcaption>
+								<img src="img/large/28.gif" alt="img28"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>29. 上櫃公司收盤資訊(資料來源：櫃買中心)</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入上櫃公司股票代碼，查詢選定日期之收盤資訊)<br>
+										<i class="fas fa-angle-right"></i> 事務所內部網路限制此功能，連接所外網路即可使用</p>
+								</figcaption>
+								<img src="img/large/29.gif" alt="img29"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>30. 上市公司K線圖(資料來源：證交所)</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入上市公司股票代碼，畫出指定年之K線圖，若頻繁使用會被證交所擋IP<br>
+									<i class="fas fa-angle-right"></i> 事務所內部網路限制此功能，連接所外網路即可使用</p>
+								</figcaption>
+								<img src="img/large/30.gif" alt="img30"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>31. 上櫃公司K線圖(資料來源：櫃買中心)</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入上櫃公司股票代碼，畫出指定年之K線圖，若頻繁使用會被櫃買中心擋IP<br>
+									<i class="fas fa-angle-right"></i> 事務所內部網路限制此功能，連接所外網路即可使用</p>
+								</figcaption>
+								<img src="img/large/31.gif" alt="img31"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>32. 上市公司收盤價資訊(資料來源：證交所)</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入上市公司股票代碼，取得指定月份或年度之收盤價<br>
+										<i class="fas fa-angle-right"></i> 事務所內部網路限制此功能，連接所外網路即可使用
+									</p>
+								</figcaption>
+								<img src="img/large/32.gif" alt="img32"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>33. 即時股價</h3>
+									<p><i class="fas fa-angle-right"></i> 輸入公司代碼，開啟CMoney股市資訊<br>
+									<i class="fas fa-angle-right"></i> 預設開啟瀏覽器為Google Chrome，若無請先安裝</p>
+								</figcaption>
+								<img src="img/large/33.gif" alt="img33"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>34. 篩選工具</h3>
+									<p><i class="fas fa-angle-right"></i> 多重篩選：輸入多個標準進行篩選  &nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right"></i> 包含篩選：輸入要包含的字元進行篩選<br>
+										<i class="fas fa-angle-right"></i> 限制：選取範圍第一列須為表頭，A欄至篩選的欄位(ex. H欄)必須都有資料</p>
+								</figcaption>
+								<img src="img/large/34.gif" alt="img34"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>35. 插入文字方塊</h3>
+									<p><i class="fas fa-angle-right"></i> 自訂字元插入至選定的儲存格的左、中、右、左上或右下</p>
+								</figcaption>
+								<img src="img/large/35.gif" alt="img35"/>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<figcaption>
+									<h3>36. 標記加總</h3>
+									<p><i class="fas fa-angle-right"></i> 加總選取的儲存格並在指定位置加入符號<br>
+										<i class="fas fa-angle-right"></i> 選擇將符號放在「儲存格」中，會使用Sumif公式只加總該欄金額；符號放在「文字方塊」則無此限制
+</p>
+								</figcaption>
+								<img src="img/large/36.gif" alt="img36"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>37. 複製選取加總</h3>
+									<p><i class="fas fa-angle-right"></i> 選取範圍再使用此功能，可複製選取之加總值</p>
+								</figcaption>
+								<img src="img/large/37.gif" alt="img37"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>38. 填滿空格</h3>
+									<p><i class="fas fa-angle-right"></i> 清除空格：清除整張工作表的半形空格，使用「填滿空格」功能前使用<br>
+										<i class="fas fa-angle-right"></i> 填滿空格：選取的範圍第一列必須要有資料，向下填滿空格，填滿方式為上一格最後有資料的儲存格</p>
+								</figcaption>
+								<img src="img/large/38.gif" alt="img38"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>39. 匯率查詢-對話方塊</h3>
+									<p><i class="fas fa-angle-right"></i> 匯率資料來源：台銀網站、中國外匯交易中心，台銀所有幣別及人民幣中心匯率皆可查詢<br>
+									<i class="fas fa-angle-right"></i> 事務所內部網路限制此功能，連接所外網路即可使用</p>
+								</figcaption>
+								<img src="img/large/39.gif" alt="img39"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>40. 匯率表產生器</h3>
+									<p><i class="fas fa-angle-right"></i> 因台銀只提供近兩年的匯率資料，故僅能產出近兩年的匯率表<br>
+										<i class="fas fa-angle-right"></i> 視網路及電腦速度，產出時間約為20秒內</p>
+								</figcaption>
+								<img src="img/large/40.gif" alt="img40"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>41. 近兩年匯率走勢圖</h3>
+									<p><i class="fas fa-angle-right"></i> 產出最近兩年選定幣別之匯率走勢圖</p>
+								</figcaption>
+								<img src="img/large/41.gif" alt="img41"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>42. 即時匯率</h3>
+									<p><i class="fas fa-angle-right"></i> 取得台銀即時之匯率資料</p>
+								</figcaption>
+								<img src="img/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>43. 單一幣別歷史匯率走勢圖</h3>
+									<p><i class="fas fa-angle-right"></i> 取得台銀各幣別歷史匯率資料並畫出走勢圖</p>
+								</figcaption>
+								<img src="img/large/43.gif" alt="img43"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>44. 全部幣別匯率查詢</h3>
+									<p><i class="fas fa-angle-right"></i> 取得台銀歷史單日全部幣別匯率資料</p>
+								</figcaption>
+								<img src="img/large/44.gif" alt="img44"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>45. 匯率換算</h3>
+									<p><i class="fas fa-angle-right"></i> 若該幣別有即期匯率，則用選定日之即期買入賣出平均計算；若無，則用現金買入賣出平均<br>
+										<i class="fas fa-angle-right"></i> 程式設定一律先換成台幣金額再作換算</p>
+								</figcaption>
+								<img src="img/large/45.gif" alt="img45"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>46. 刪除空白列</h3>
+									<p><i class="fas fa-angle-right"></i> 選取任一範圍，刪除該範圍中的空白列(程式逐列確認A~AZ欄中空白列並刪除)<br>
+										<i class="fas fa-angle-right"></i> 不要選取整欄使用，會跑很久或當機</p>
+								</figcaption>
+								<img src="img/large/46.gif" alt="img46"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>47. 刪除空白欄</h3>
+								</figcaption>
+								<img src="img/large/47.gif" alt="img47"/>
+							</figure>
+						</li>																																	
+						<li>
+							<figure>
+								<figcaption>
+									<h3>48. 刪除圖示</h3>
+									<p><i class="fas fa-angle-right"></i> 刪除選取範圍內的圖示、文字方塊等，不會刪到儲存格內的資料</p>
+								</figcaption>
+								<img src="img/large/48.gif" alt="img48"/>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<figcaption>
+									<h3><i class="fas fa-rocket"></i> 自訂快捷鍵安裝步驟</h3>
+									<p><i class="fas fa-angle-right"></i> 右鍵上方功能區→自訂功能區→勾選開發人員<br>
+										<i class="fas fa-angle-right"></i> 開發人員標籤→Excel增益集→瀏覽→找到放shortcuts.xlam的地方→確定</p>
+								</figcaption>
+								<img src="img/large/49.gif" alt="img49"/>
+							</figure>
+						</li>	
+						<li>
+							<figure>
+								<figcaption>
+									<h3><i class="fas fa-feather-alt"></i> 新增快捷鍵-1</h3>
+								</figcaption>
+								<img src="img/large/50.png" alt="img50"/>
+							</figure>
+						</li>		
+						<li>
+							<figure>
+								<figcaption>
+									<h3><i class="fas fa-feather-alt"></i> 新增快捷鍵-2</h3>
+								</figcaption>
+								<img src="img/large/51.png" alt="img51"/>
+							</figure>
+						</li>		
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpGridGallery.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+	</body>
+	<footer><div id="copyright"><ul style="text-align : center;">Mike Y. Liao &copy; 2018  &nbsp;All rights reserved</ul></div></footer>
+</html>
