@@ -17,7 +17,7 @@
 	<body>
 		<div class="container">
 			<header class="clearfix">
-				<span>MLTools <span class="bp-icon bp-icon-about" data-content="The TickMark Excel Add-In is designed for auditors and accountants. Especially thanks to the advice from Anthony, CPA, beloved colleagues and kind strangers from the Internet, without your help, this would not have been possible."></span></span>
+				<span><i class="fas fa-book"></i>MLTools <span class="bp-icon bp-icon-about" data-content="The TickMark Excel Add-In is designed for auditors and accountants. Especially thanks to the advice from Anthony, CPA, beloved colleagues and kind strangers from the Internet, without your help, this would not have been possible."></span></span>
 				<h1>TickMark Demo</h1>
 			</header>
 			<div id="grid-gallery" class="grid-gallery">
@@ -752,7 +752,7 @@
 									<h3>42. 即時匯率</h3>
 									<p><i class="fas fa-angle-right"></i> 取得台銀即時之匯率資料</p>
 								</figcaption>
-								<img src="img/large/1.png" alt="img01"/>
+								<img src="img/large/42.gif" alt="img42"/>
 							</figure>
 						</li>
 						<li>
@@ -853,6 +853,26 @@
 		<script>
 			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script>
+			$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+			</script>
 	</body>
-	<footer><div id="copyright"><ul style="text-align : center;">Mike Y. Liao &copy; 2018  &nbsp;All rights reserved</ul></div></footer>
+	<footer><a href="#" class="go-top"><i class="fas fa-chevron-up"></i></a><div id="copyright"><ul style="text-align : center;">Mike Y. Liao &copy; 2018  &nbsp;All rights reserved</ul></div></footer>
 </html>
