@@ -223,4 +223,4 @@ hr.style1 {
 	line-height: 1.6;
 }
 
-.freestyle ul li{ list-style: square outside; }
+.freestyle ul li{ list-style: square inside; }
