@@ -203,3 +203,24 @@ a:hover {
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.6);
 }
+
+hr.style1 {
+	height: 6px;
+	border: 0;
+	background:#F1F4F9;
+}
+
+.freestyle a{
+	color: #2581b8;
+}
+
+.freestyle a:hover{
+	color: #414A51;
+}
+
+.freestyle {
+	font-size: 110%;
+	line-height: 1.6;
+}
+
+.freestyle ul li{ list-style: square outside; }
